@@ -1,0 +1,17 @@
+//Not recommended Poor solution 
+import java.util.*;
+public class TripletSum {	
+    public static void FindTriplet(int[] arr, int x){
+        Arrays.sort(arr);
+        int size = arr.length;
+        for(int i=0;i<size-2;i++){
+            for(int j=i+1;j<size-1;j++){
+                for(int k=j+1;k<size;k++){
+                    if(arr[i]+arr[j]+arr[k]==x){
+                       System.out.println(arr[i]+" "+arr[j]+" "+arr[k]);             
+                    }
+                }
+            }
+        }
+    }
+}
